@@ -9,7 +9,7 @@ pipeline {
         stage('checkout') {
        steps {
                 echo 'compiling..'
-                git branch: 'terraform-eks', url: 'https://github.com/rverm20/DevopsProjectSampleJavaApp.git'
+                git branch: 'eks-terraform', url: 'https://github.com/rverm20/DevopsProjectSampleJavaApp.git'
            }
         }
         stage('Initializing Terraform'){
